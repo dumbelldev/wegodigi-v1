@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function Header({ bg = 'dark' }: { bg: 'light' | 'dark' }) {
+export default function Header({ bg = 'dark' }: { bg?: 'light' | 'dark' }) {
   return (
     <>
       <header className={bg === 'dark' ? 'bg-primary' : 'bg-gray-100'}>
